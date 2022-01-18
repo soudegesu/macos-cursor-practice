@@ -15,6 +15,9 @@ struct ContentView: View {
           NSCursor.closedHand.set()
         }.frame(width: 120, height: 40, alignment: .center)
       }.frame(width: 640, height: 480, alignment: .center)
+      .whenHovered({ isInside in
+          print(isInside)
+      })
     }
 }
 
