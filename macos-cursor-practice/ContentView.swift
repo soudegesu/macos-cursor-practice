@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+      VStack {
+        Button("change icon") {
+          NSCursor.closedHand.set()
+        }.frame(width: 120, height: 40, alignment: .center)
+      }.frame(width: 640, height: 480, alignment: .center)
     }
 }
 
